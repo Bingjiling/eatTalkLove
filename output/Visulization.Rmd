@@ -1,0 +1,34 @@
+---
+title: "Visulization"
+author: "Yanyu Zheng yz2690"
+date: "April 18, 2016"
+output: html_document
+---
+
+```{r}
+setwd("/Users/yutou/ADA/Final Project/data")
+library(data.table)
+library(dplyr)
+library(hexbin)
+user = fread("user.csv")
+business = read.csv("business.csv")
+review = fread("review.csv")
+```
+
+```{r}
+
+plot(hexbin(user$review_count, user$average_stars),
+     xlab="number of reviews",
+     ylab="average review")
+
+hist(user$average_stars,
+     main="User review average",
+     xlab="average review")
+
+```
+
+```{r}
+k = which.max(user$review_count)
+play = user[k,]
+```
+
