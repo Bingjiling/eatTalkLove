@@ -1,8 +1,10 @@
 # eatTalkLove
-Prediction of star rating from yelp reviews
+Classification and Analysis of Keywords of Yelp Reviews
+![]()
 
 ## Abstract
 
-This project focuses on detecting the review habits of different type of users and classification of reviews’ star levels based on. The dataset used is from yelp dataset challenge, which contains 2.2M reviews made by 552K users for 77K businesses. In the first phase of the project, stratified samples were used in F-test for multiple aspects of reviews and visualization of basic exploratory statistic of the data. The goal is to have a basic idea of the data structure and provide insight on what information can be used for further classification. The next phase of the project is to build a classification model that pinpoint the star rating of a review based on the text. This has been done by building word frequency matrix from the reviews, abstract other language features, dimension reduction and finally classification by SVM. Through showing the power of the model in classifying reviews, this research shows certain features can be used in detecting sentiment in natural language. 
+With the increasing popularity of Yelp and the huge amount of data it collects, the analysis of users’ reviews has become an essential technique to understand customer behaviors. In this project, we focused on the classification and analysis of keywords of yelp reviews. The Yelp Challenge Dataset, which contains 2.2M reviews made by 552K users, is used in the project. In the first phase of the project, we built an adaboost model to predict the star rating of a review from the corresponding text. The model achieved 91.91% accuracy rate on a test set with 40K+ reviews and generated keywords in the process. In the next phase of the project, we analyzed the keywords in the sense of words frequency, part of speech and positive/negative effects. Through showing the power of the keywords in classifying reviews, this research shows that from 13.18% of the words we can detect 90%+ sentiment in the reviews.
+
  
 
